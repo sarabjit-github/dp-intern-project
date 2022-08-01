@@ -1,0 +1,60 @@
+.task-container{
+    max-width: 445px;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    position: relative;
+}
+.task-heading{
+    text-align: center;
+    height: 40px;
+    background: black;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.task-heading p{
+    line-height: 40px;
+    text-transform: capitalize;
+    color: white;
+}
+.task-content{
+    padding: 1.5rem;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.t-content-2{
+    display: none;
+    margin: 0.5rem 0;
+}
+.arr-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+.arrow-icon{
+    position: relative;
+    z-index: 9;
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.arrow-icon::before, .arrow-icon::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 3px;
+    top: 0%;
+    left: 0%;
+    background: #1e1e1e;
+}
+.arrow-icon::before{
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+.arrow-icon::after{
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
